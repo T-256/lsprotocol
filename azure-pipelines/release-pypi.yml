@@ -23,7 +23,7 @@ extends:
     # We don't ship any built in packages.
     generateNotice: false
     # Build output is expected to be in the `dist` directory under the project root.
-    projectRootDirectory: $(Build.SourcesDirectory)/packages/python
+    # projectRootDirectory: $(Build.SourcesDirectory)/packages/python
     packageName: lsprotocol
     buildSteps:
       - script: python -m pip install nox
